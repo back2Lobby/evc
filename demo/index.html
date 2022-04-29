@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        font-family: "Open Sans", sans-serif;
+      }
+    </style>
+  </head>
+  <body class="flex">
+    <!-- event calendar -->
+    <div>
+      <div
+        class="w-72 border-gray-200 border shadow-sm m-3 p-1 rounded-md"
+        id="eventCalendar"
+      >
+        <!-- calendar header -->
+        <div class="flex flex-col" id="calendarHeader">
+          <div class="flex items-center justify-center relative w-full">
+            <div class="absolute left-0 ml-1 flex flex-col">
+              <button
+                id="nextMonth"
+                class="cursor-pointer -mb-px"
+                title="Next Month"
+              >
+                <img src="icons/up-arrow.png" alt="" width="13" />
+              </button>
+              <button
+                id="prevMonth"
+                class="cursor-pointer -mt-px"
+                title="Previous Month"
+              >
+                <img src="icons/down-arrow.png" alt="" width="13" />
+              </button>
+            </div>
+            <strong class="fond-bold text-lg text-gray-600">
+              <span class="capitalize" id="thisMonth"> June </span>
+              <span id="thisYear"> 2022 </span>
+            </strong>
+          </div>
+          <!-- event descriptor -->
+          <div
+            class="text-gray-500 text-xs text-center flex flex-col transition ease-in-out delay-150"
+            id="eventDescriptor"
+          >
+            <!-- events descriptions here -->
+          </div>
+        </div>
+        <!-- calendar main body -->
+        <div class="flex flex-col py-1" id="calendarBody">
+          <!-- names of days of week -->
+          <div
+            class="grid grid-cols-7 gap-px text-center text-gray-600 text-sm font-medium mb-px"
+            id="namesOfWeekDays"
+          >
+            <div class="box-content w-full h-full border border-gray-100">
+              Sun
+            </div>
+            <div class="box-content w-full h-full border border-gray-100">
+              Mon
+            </div>
+            <div class="box-content w-full h-full border border-gray-100">
+              Tue
+            </div>
+            <div class="box-content w-full h-full border border-gray-100">
+              Wed
+            </div>
+            <div class="box-content w-full h-full border border-gray-100">
+              Thu
+            </div>
+            <div class="box-content w-full h-full border border-gray-100">
+              Fri
+            </div>
+            <div class="box-content w-full h-full border border-gray-100">
+              Sat
+            </div>
+          </div>
+          <!-- days of month -->
+          <div
+            class="grid grid-cols-7 gap-px text-center text-gray-600 text-sm"
+            id="daysOfMonth"
+          >
+            <!-- single model for a day -->
+            <div
+              class="relative box-content w-full h-full border border-gray-100 cursor-pointer"
+              id="dayCellModel"
+            >
+              1
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./../dist/evc.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
