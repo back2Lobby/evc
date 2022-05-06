@@ -7,9 +7,12 @@ const __dirname = path.resolve();
 export default merge(common, {
     output: {
         path: path.resolve(__dirname, "dist"),
-        filename: "evc.min.js",
+        filename: "evc.full.js",
         library: "EVC",
         libraryTarget: "umd"
     },
-    mode: "production"
+    mode: "production",
+    optimization: {
+        minimize: false
+    }
 })

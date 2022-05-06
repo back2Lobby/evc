@@ -1,4 +1,4 @@
-import CalendarEvent from "./CalendarEvent";
+import CalendarEvent from "./CalendarEvent.js";
 
 export default class EventCalendar {
   #_today = new Date();

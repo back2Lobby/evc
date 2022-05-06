@@ -1,14 +1,28 @@
 {
-  "name": "event-calendar",
+  "name": "evc",
   "version": "1.0.0",
   "description": "A simple javascript event calendar",
-  "main": "dist/evc.js",
+  "keywords": [
+    "calendar",
+    "event calendar"
+  ],
+  "homepage": "https://github.com/back2Lobby/evc",
+  "bugs": {
+    "url": "https://github.com/back2Lobby/evc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/back2Lobby/evc"
+  },
+  "main": "src/index.js",
+  "type": "module",
   "scripts": {
     "dev": "webpack serve --config webpack.dev.js",
-    "build": "webpack --config webpack.prod.js"
+    "build": "webpack --config webpack.prod.js",
+    "build-full": "webpack --config webpack.full.js"
   },
   "author": "Tayyab Javaid",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "@babel/core": "^7.17.9",
     "@babel/preset-env": "^7.16.11",
