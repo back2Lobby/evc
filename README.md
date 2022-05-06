@@ -19,7 +19,7 @@ A javascript event calendar management tool that can be integrated with any UI.
         npm install evc
 
 ## Usage:
-we specify the events in the following format. Then we can listen to the custom events fired by evc and update our UI accordingly.
+We can specify the events in the following format. Then we can listen to the custom events fired by evc and update our UI accordingly.
 ```javascript
   import EventCalendar from "evc";
 
@@ -60,13 +60,13 @@ we specify the events in the following format. Then we can listen to the custom 
 | Property | Description |
 | ----------- | ----------- |
 | `events` | An array of events (class CalendarEvent) |
-| `days` | Array of objects containing two properties: <ul><li>days: A JavaScript Date Object</li><li>events: An array of events (class CalendarEvent) on this day</li></ul> |
-| `month` | The current month (1-12). Changing this value will triggered the 'monthChanged' event |
-| `year` | The current year. Changing this value will triggered the 'yearChanged' event |
+| `days` | Array of objects containing two properties: <ul><li>days: A JavaScript date object</li><li>events: An array of events (class CalendarEvent) on this day</li></ul> |
+| `month` | Target month (1-12). Changing this value will triggered the 'monthChanged' event |
+| `year` | Target year. Changing this value will triggered the 'yearChanged' event |
 | `selectedDay` | The currently selected day (`null` by default). Changing this value will triggered the 'selectedDayChanged' event |
 
 ## CalendarEvent Class:
-  A class that represents an event.
+  A class that represents an event. Here are some type of events that can be created:
 
   **Single Day Events**
   ```javascript
@@ -78,7 +78,7 @@ we specify the events in the following format. Then we can listen to the custom 
       year: 2022
     },
     themeColor : "#cf3333",
-    })
+  })
   ```
 
   **Multi-day Events**
