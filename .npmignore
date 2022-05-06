@@ -1,1 +1,5 @@
 /dist
+webpack.*.js
+.babelrc
+.gitignore
+/node_modules
