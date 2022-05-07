@@ -8,7 +8,7 @@
 <br>
 A javascript event calendar management tool that can be integrated with any UI.
 
-> Check out the [demo]() and see how it works.
+> Check out the [demo](https://evcdemo.onrender.com/) and explore the [demo repository](https://github.com/back2Lobby/evcdemo).
 
 ## Installation:
 1. Using CDN:
