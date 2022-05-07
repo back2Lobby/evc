@@ -17,7 +17,6 @@ A javascript event calendar management tool that can be integrated with any UI.
 2. Using NPM:
     
         npm install evc
-
 ## Usage:
 ### With NPM Package:
 We can specify the events in the `EventCalendar` class constructor. Then we can listen to the custom events fired by evc and update our UI accordingly by chaining the `on` method.
@@ -71,12 +70,12 @@ const evc = new EVC.EventCalendar([
   // example creating a new EventCalendar
   new EventCalendar([events]);
   ```
-  where `events` is an array of objects (class CalendarEvent)
+  where `events` is an array of objects of class [CalendarEvent](#eventcalendar-class)
 ### Properties:
 | Property | Description |
 | ----------- | ----------- |
-| `events` | An array of events (class CalendarEvent) |
-| `days` | Array of objects containing two properties: <ul><li>days: A JavaScript date object</li><li>events: An array of events (class CalendarEvent) on this day</li></ul> |
+| `events` | An array of objects of class [CalendarEvent](#eventcalendar-class) |
+| `days` | Array of objects containing two properties: <ul><li>days: A JavaScript date object</li><li>events: An array of objects of class [CalendarEvent](#eventcalendar-class) representing events on this day</li></ul> |
 | `month` | Target month (1-12). Changing this value will triggered the 'monthChanged' event |
 | `year` | Target year. Changing this value will triggered the 'yearChanged' event |
 | `selectedDay` | The currently selected day (`null` by default). Changing this value will triggered the 'selectedDayChanged' event |
