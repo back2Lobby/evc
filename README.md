@@ -70,12 +70,12 @@ const evc = new EVC.EventCalendar([
   // example creating a new EventCalendar
   new EventCalendar([events]);
   ```
-  where `events` is an array of objects of class [CalendarEvent](#eventcalendar-class)
+  where `events` is an array of objects of class [CalendarEvent](#calendarevent-class)
 ### Properties:
 | Property | Description |
 | ----------- | ----------- |
-| `events` | An array of objects of class [CalendarEvent](#eventcalendar-class) |
-| `days` | Array of objects containing two properties: <ul><li>days: A JavaScript date object</li><li>events: An array of objects of class [CalendarEvent](#eventcalendar-class) representing events on this day</li></ul> |
+| `events` | An array of objects of class [CalendarEvent](#calendarevent-class) |
+| `days` | Array of objects containing two properties: <ul><li>days: A JavaScript date object</li><li>events: An array of objects of class [CalendarEvent](#calendarevent-class) representing events on this day</li></ul> |
 | `month` | Target month (1-12). Changing this value will triggered the 'monthChanged' event |
 | `year` | Target year. Changing this value will triggered the 'yearChanged' event |
 | `selectedDay` | The currently selected day (`null` by default). Changing this value will triggered the 'selectedDayChanged' event |
