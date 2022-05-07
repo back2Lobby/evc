@@ -74,7 +74,7 @@ const evc = new EVC.EventCalendar([
 ### Properties:
 | Property | Description |
 | ----------- | ----------- |
-| `events` | An array of objects of class [CalendarEvent](#calendarevent-class) |
+| `events` | An array of objects of class [CalendarEvent](#calendarevent-class) or a simple js object with similar properties |
 | `days` | Array of objects containing two properties: <ul><li>days: A JavaScript date object</li><li>events: An array of objects of class [CalendarEvent](#calendarevent-class) representing events on this day</li></ul> |
 | `month` | Target month (1-12). Changing this value will triggered the 'monthChanged' event |
 | `year` | Target year. Changing this value will triggered the 'yearChanged' event |
