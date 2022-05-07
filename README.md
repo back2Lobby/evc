@@ -19,7 +19,7 @@ A javascript event calendar management tool that can be integrated with any UI.
         npm install evc
 ## Usage:
 ### With NPM Package:
-We can specify the events in the `EventCalendar` class constructor. Then we can listen to the custom events fired by evc and update our UI accordingly by chaining the `on` method.
+We can specify the events in the [EventCalendar](#eventcalendar-class) class constructor. Then we can listen to the custom events fired by evc and update our UI accordingly by chaining the `on` method.
 ```javascript
   import EventCalendar from "evc";
 
