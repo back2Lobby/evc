@@ -182,6 +182,15 @@ export default class EventCalendar {
     }
   }
 
+  removeEvent(event) {
+      // make sure event is an instance of CalendarEvent
+      if (!(event instanceof CalendarEvent)) {
+        event = new CalendarEvent(event);
+      }
+      
+      this.events = this.events.filter((ev) => ev.title !== event.title && JSON.stringify(ev) !== JSON.stringify(event));
+  }
+
   dispatchCustomEvent(customEvent, data) {
     if (this.#_customEventStore.length > 0) {
       this.#_customEventStore.forEach((ev) => {

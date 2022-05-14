@@ -1,8 +1,9 @@
 {
   "name": "evc",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A simple javascript event calendar",
   "keywords": [
+    "evc",
     "calendar",
     "event calendar"
   ],
