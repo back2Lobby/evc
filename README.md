@@ -80,6 +80,13 @@ const evc = new EVC.EventCalendar([
 | `year` | Target year. Changing this value will triggered the 'yearChanged' event |
 | `selectedDay` | The currently selected day (`null` by default). Changing this value will triggered the 'selectedDayChanged' event |
 
+### Methods:
+| Method | Description |
+| ----------- | ----------- |
+| `on` | Attach an event listener to the EventCalendar. The event listener will be called with the event name and the event data <br> ```on(eventName, callback)```<br> Where the data dispatched with event and the current [EventCalendar](#eventcalendar-class) instance will be passed to callback function|
+| `addEvent` | Add an event to the calendar. The event will be added to the `events` property <br> ```addEvent(event)```<br> Where event is an instance of [CalendarEvent](#calendarevent-class) or a simple object having same properties|
+
+
 ## CalendarEvent Class:
   A class that represents an event. Here are some type of events that can be created:
 

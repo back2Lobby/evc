@@ -170,15 +170,15 @@ export default class EventCalendar {
 
   addEvent(event) {
     // make sure event is an instance of CalendarEvent
-    if (event instanceof CalendarEvent) {
-      // make sure event is not already in events
-      if (this.validateEventDoesntExistsAlready(event)) {
-        this.events = this.events.concat(event);
-      } else {
-        throw "Duplicate Events Not Allowed";
-      }
+    if (!(event instanceof CalendarEvent)) {
+      event = new CalendarEvent(event);
+    }
+
+    // make sure event is not already in events
+    if (this.validateEventDoesntExistsAlready(event)) {
+      this.events = this.events.concat(event);
     } else {
-      throw "Event must be an instance of CalendarEvent";
+      throw "Duplicate Events Not Allowed";
     }
   }
 
@@ -293,10 +293,7 @@ export default class EventCalendar {
 
     return (
       eventsAvailable.filter(
-        (ev) =>
-          ev.title === event.title &&
-          ev.start.getTime() === event.start.getTime() &&
-          ev.end.getTime() === event.end.getTime()
+        (ev) => JSON.stringify(ev) === JSON.stringify(event)
       ).length === 0
     );
   }
