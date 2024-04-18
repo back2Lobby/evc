@@ -188,7 +188,7 @@ export default class EventCalendar {
         event = new CalendarEvent(event);
       }
       
-      this.events = this.events.filter((ev) => ev.title !== event.title && JSON.stringify(ev) !== JSON.stringify(event));
+      this.events = this.events.filter((ev) => ev.id !== event.id && JSON.stringify(ev) !== JSON.stringify(event));
   }
 
   dispatchCustomEvent(customEvent, data) {

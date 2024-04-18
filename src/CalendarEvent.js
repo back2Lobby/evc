@@ -1,5 +1,8 @@
+import { v4 as uuid } from "uuid";
+
 export default class CalendarEvent {
-  constructor({ title, start, end = null, themeColor = "#03a9f4" }) {
+  constructor({ id = null, title, start, end = null, themeColor = "#03a9f4" }) {
+    this.id = id ? id : uuid();
     this.title = title;
 
     // if end day of weekly event is given but no start is given
