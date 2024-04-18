@@ -13,7 +13,7 @@ A javascript event calendar management tool that can be integrated with any UI.
 ## Installation:
 1. Using CDN:
 
-    https://cdn.jsdelivr.net/gh/back2Lobby/evc/dist/evc.min.js
+    https://cdn.jsdelivr.net/gh/back2Lobby/evc@latest/dist/evc.min.js
 2. Using NPM:
     
         npm install evc
