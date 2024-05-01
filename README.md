@@ -14,7 +14,11 @@ A javascript event calendar management tool that can be integrated with any UI.
 1. Using CDN:
 
     https://cdn.jsdelivr.net/gh/back2Lobby/evc@latest/dist/evc.min.js
-2. Using NPM:
+   
+   or
+   
+   https://cdn.jsdelivr.net/npm/evc@latest/dist/evc.min.js
+3. Using NPM:
     
         npm install evc
 ## Usage:
