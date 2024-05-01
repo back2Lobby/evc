@@ -166,7 +166,7 @@ const evc = new EVC.EventCalendar([
 | `start` | YES | The start date of the event. It should be an object with following properties: <ul><li>day: They day of month (1-31 depending on month)</li><li>month: The month of year (1-12)</li><li>year: Target year e.i. 2022</li><li>weekDay: The day of week in numeric form (0-6 starting from Sunday)</li></ul>|
 | `end` | NO | The end date of the event (format same as `start`). If not specified, same date as `start` will be used indicating a single day event |
 | `themeColor` | NO | The color of the event in hexadecimal form (by default #03a9f4) |
-| `props` | NO | Extra properties of the event |
+| `props` | NO | Extra properties of the event (by default an empty object) |
 
 ## Events:
 | Event | Description |
