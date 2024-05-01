@@ -1,7 +1,7 @@
 import { v4 as uuid } from "uuid";
 
 export default class CalendarEvent {
-  constructor({ id = null, title, start, end = null, themeColor = "#03a9f4" }) {
+  constructor({ id = null, title, start, end = null, themeColor = "#03a9f4", props = {} }) {
     this.id = id ? id : uuid();
     this.title = title;
 
@@ -23,6 +23,8 @@ export default class CalendarEvent {
     if (this.validateHexColor(themeColor)) {
       this.themeColor = themeColor;
     }
+
+    this.props = props;
   }
 
   validateHexColor(color) {
